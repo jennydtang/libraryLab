@@ -1,10 +1,9 @@
-package Library;
 
 public class GeneralBook extends Book {
     private boolean bestSeller;
     private boolean available;
 
-    public GeneralBook(String publisher, String genre, String author, int yearPublished, int numberofBooks,
+    public GeneralBook(String publisher, String genre, Author author, int yearPublished, int numberofBooks,
             boolean bestSeller, boolean available) {
         super(publisher, genre, author, yearPublished, numberofBooks);
         this.bestSeller = bestSeller;

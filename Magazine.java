@@ -1,10 +1,9 @@
-package Library;
 
 public class Magazine extends Periodical {
     private int edition;
     private String topicofInterest, publicationFrequency;
 
-    public Magazine(String publisher, String genre, String author, int yearPublished, int numberofBooks, int edition,
+    public Magazine(String publisher, String genre, Author author, int yearPublished, int numberofBooks, int edition,
             String topicofInterest, String publicationFrequency) {
         super(publisher, genre, author, yearPublished, numberofBooks);
         this.topicofInterest = topicofInterest;

@@ -1,10 +1,9 @@
-package Library;
 
 public class ReferenceBook extends Book {
     private int edition;
     private String referenceType;
 
-    public ReferenceBook(String publisher, String genre, String author, int yearPublished, int numberofBooks,
+    public ReferenceBook(String publisher, String genre, Author author, int yearPublished, int numberofBooks,
             int edition, String referenceType) {
         super(publisher, genre, author, yearPublished, numberofBooks);
         this.edition = edition;

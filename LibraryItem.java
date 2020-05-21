@@ -1,11 +1,11 @@
-package Library;
 
 public class LibraryItem {
-    private String publisher, genre, author;
+    private String publisher, genre;
     private int yearPublished, numberofItems;
+    Author author;
 
     // make a constructor
-    public LibraryItem(String publisher, String genre, String author, int yearPublished, int numberofItems) {
+    public LibraryItem(String publisher, String genre, Author author, int yearPublished, int numberofItems) {
         this.publisher = publisher;
         this.genre = genre;
         this.author = author;
@@ -30,11 +30,11 @@ public class LibraryItem {
         this.genre = genre;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 
