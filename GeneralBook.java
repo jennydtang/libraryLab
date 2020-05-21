@@ -4,8 +4,8 @@ public class GeneralBook extends Book {
     private boolean available;
 
     public GeneralBook(String publisher, String genre, Author author, int yearPublished, int numberofBooks,
-            boolean bestSeller, boolean available) {
-        super(publisher, genre, author, yearPublished, numberofBooks);
+            boolean bestSeller, boolean available, String typeName) {
+        super(publisher, genre, author, yearPublished, numberofBooks, typeName);
         this.bestSeller = bestSeller;
         this.available = available;
     }

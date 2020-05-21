@@ -4,8 +4,8 @@ public class ReferenceBook extends Book {
     private String referenceType;
 
     public ReferenceBook(String publisher, String genre, Author author, int yearPublished, int numberofBooks,
-            int edition, String referenceType) {
-        super(publisher, genre, author, yearPublished, numberofBooks);
+            int edition, String referenceType, String typeName) {
+        super(publisher, genre, author, yearPublished, numberofBooks, typeName);
         this.edition = edition;
         this.referenceType = referenceType;
     }

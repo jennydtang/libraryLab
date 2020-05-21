@@ -4,8 +4,8 @@ public class Magazine extends Periodical {
     private String topicofInterest, publicationFrequency;
 
     public Magazine(String publisher, String genre, Author author, int yearPublished, int numberofBooks, int edition,
-            String topicofInterest, String publicationFrequency) {
-        super(publisher, genre, author, yearPublished, numberofBooks);
+            String topicofInterest, String publicationFrequency, String typeName) {
+        super(publisher, genre, author, yearPublished, numberofBooks, typeName);
         this.topicofInterest = topicofInterest;
         this.publicationFrequency = publicationFrequency;
     }

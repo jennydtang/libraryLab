@@ -4,11 +4,12 @@ import java.util.List;
 
 public class Library {
     public static void main(String[] args) {
-        // ChildCard cc = new ChildCard();
-        // List<CardHolder> persons = new ArrayList<>();
-        // persons.add(cc);
-
-        // CardHolder.printCanCheckout(persons);
+        LibraryItem Book = LibraryFactory.CreateItem(ItemTypes.BOOK);
+        LibraryItem Periodical = LibraryFactory.CreateItem(ItemTypes.PERIODICAL);
+        List<LibraryItem> items = new ArrayList<>();
+        items.add(Book);
+        items.add(Periodical);
+        LibraryItem.printIsHere(items);
     }
 
 }

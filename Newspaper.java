@@ -3,8 +3,8 @@ public class Newspaper extends Periodical {
     private String placeofPublication;
 
     public Newspaper(String publisher, String genre, Author author, int yearPublished, int numberofBooks,
-            String placeofPublication) {
-        super(publisher, genre, author, yearPublished, numberofBooks);
+            String placeofPublication, String typeName) {
+        super(publisher, genre, author, yearPublished, numberofBooks, typeName);
         this.placeofPublication = placeofPublication;
 
     }
